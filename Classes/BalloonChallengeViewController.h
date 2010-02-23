@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameViewController.h"
 
 @interface BalloonChallengeViewController : UIViewController {
-
+	GameViewController *gameViewController;
 }
+
+@property (nonatomic, retain) IBOutlet GameViewController *gameViewController;
+
+-(IBAction) gameButtonPressed: (id) sender;
 
 @end
 

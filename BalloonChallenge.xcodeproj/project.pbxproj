@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0A24546911214737009A536A /* game_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A24546811214737009A536A /* game_bg.png */; };
+		0A49A07211337C5200206894 /* blue_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A49A07111337C5200206894 /* blue_balloon.png */; };
+		0ABCD217113228A200B62EB0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABCD215113228A200B62EB0 /* GameViewController.m */; };
+		0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABCD216113228A200B62EB0 /* GameViewController.xib */; };
 		1D3623260D0F684500981E51 /* BalloonChallengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BalloonChallengeAppDelegate.m */; };
 		1D3A678D1122975D00C55F47 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A678B1122975D00C55F47 /* OptionsViewController.m */; };
 		1D3A678E1122975D00C55F47 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3A678C1122975D00C55F47 /* OptionsViewController.xib */; };
@@ -24,6 +27,10 @@
 
 /* Begin PBXFileReference section */
 		0A24546811214737009A536A /* game_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_bg.png; sourceTree = "<group>"; };
+		0A49A07111337C5200206894 /* blue_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_balloon.png; sourceTree = "<group>"; };
+		0ABCD214113228A200B62EB0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		0ABCD215113228A200B62EB0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		0ABCD216113228A200B62EB0 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BalloonChallengeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BalloonChallengeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeAppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +77,8 @@
 				1D3A678B1122975D00C55F47 /* OptionsViewController.m */,
 				1D3A679A112297CA00C55F47 /* HighScoresViewController.h */,
 				1D3A679B112297CA00C55F47 /* HighScoresViewController.m */,
+				0ABCD214113228A200B62EB0 /* GameViewController.h */,
+				0ABCD215113228A200B62EB0 /* GameViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -106,10 +115,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A49A07111337C5200206894 /* blue_balloon.png */,
 				1D3A679C112297CA00C55F47 /* HighScoresViewController.xib */,
 				0A24546811214737009A536A /* game_bg.png */,
 				2899E5210DE3E06400AC0155 /* BalloonChallengeViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				0ABCD216113228A200B62EB0 /* GameViewController.xib */,
 				1D3A678C1122975D00C55F47 /* OptionsViewController.xib */,
 				8D1107310486CEB800E47090 /* BalloonChallenge-Info.plist */,
 			);
@@ -173,6 +184,8 @@
 				0A24546911214737009A536A /* game_bg.png in Resources */,
 				1D3A678E1122975D00C55F47 /* OptionsViewController.xib in Resources */,
 				1D3A679E112297CA00C55F47 /* HighScoresViewController.xib in Resources */,
+				0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */,
+				0A49A07211337C5200206894 /* blue_balloon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +201,7 @@
 				28D7ACF80DDB3853001CB0EB /* BalloonChallengeViewController.m in Sources */,
 				1D3A678D1122975D00C55F47 /* OptionsViewController.m in Sources */,
 				1D3A679D112297CA00C55F47 /* HighScoresViewController.m in Sources */,
+				0ABCD217113228A200B62EB0 /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

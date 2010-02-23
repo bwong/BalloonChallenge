@@ -1,22 +1,18 @@
 //
-//  BalloonChallengeViewController.m
+//  GameViewController.m
 //  BalloonChallenge
 //
-//  Created by Brian Wong on 2/6/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Created by Kevin Weiler on 2/21/10.
+//  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "BalloonChallengeViewController.h"
+#import "GameViewController.h"
 
-@implementation BalloonChallengeViewController
-@synthesize gameViewController;
 
--(IBAction) gameButtonPressed: (id) sender {
-	[self presentModalViewController:gameViewController animated:YES];
-}
+@implementation GameViewController
 
 /*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
+ // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         // Custom initialization
@@ -25,19 +21,11 @@
 }
 */
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
 
-
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-*/
 
 
 /*
@@ -57,13 +45,13 @@
 
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
-	gameViewController = nil;
+	// e.g. self.myOutlet = nil;
 }
 
 
 - (void)dealloc {
-	[gameViewController release];
     [super dealloc];
 }
+
 
 @end
