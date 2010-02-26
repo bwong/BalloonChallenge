@@ -11,9 +11,34 @@
 @implementation BalloonChallengeViewController
 @synthesize gameViewController;
 
+/* START BRIAN'S CODE */
+@synthesize highScoresViewController;
+@synthesize optionsViewController;
+@synthesize helpViewController;
+/* END BRIAN'S CODE */
+
 -(IBAction) gameButtonPressed: (id) sender {
 	[self presentModalViewController:gameViewController animated:YES];
 }
+
+/* START BRIAN'S CODE */
+
+// User pressed highscores button put up highscores view
+- (IBAction) highScoresButtonPressed: (id) sender {
+	[self presentModalViewController:highScoresViewController animated:YES];    
+}
+
+// User pressed options button put up options view
+- (IBAction) optionsButtonPressed: (id) sender {
+	[self presentModalViewController:optionsViewController animated:YES];        
+}
+
+// User pressed help button put up help view
+- (IBAction) helpButtonPressed: (id) sender {
+	[self presentModalViewController:helpViewController animated:YES];        
+}
+
+/* END BRIAN'S CODE */
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.

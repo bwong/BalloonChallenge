@@ -11,6 +11,71 @@
 
 @implementation OptionsViewController
 
+@synthesize playerName;
+@synthesize levelLabel;
+@synthesize backButton;
+@synthesize saveButton;
+@synthesize gameDifficulty;
+
+// Go Back to Main Window
+- (IBAction) backButtonPressed: (id) sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+// Save Information for Default Player for the Session
+- (IBAction) saveButtonPressed: (id) sender {
+    // Save Player Info
+    // Our AppDelegate has the master player database object
+    // so to access it, we need to get the delegate.
+    BalloonChallengeAppDelegate *appDelegate = 
+        (BalloonChallengeAppDelegate*)[[UIApplication sharedApplication] delegate];
+    int level = [levelLabel.text intValue];
+    Player *newPlayer = [[Player alloc] initWithName:playerName.text 
+                                      andDifficulty:gameDifficulty 
+                                           andLevel:level 
+                                       andHighscore:0];
+    appDelegate.defaultPlayer = newPlayer;
+    [appDelegate.playerDatabaseObj addPlayer:playerName.text 
+                     withDifficultySettingAt:gameDifficulty 
+                           andLevelSettingAt:level 
+                              andHighscoreOf:0];
+}
+
+// Switching Levels
+- (IBAction) sliderChanged: (id) sender {
+    UISlider *slider = (UISlider *) sender;
+    int levelInt = (int) (slider.value);
+    NSString *newText = [[NSString alloc] initWithFormat:@"%d",levelInt];
+    levelLabel.text = newText;
+    [newText release];
+}
+
+// Selecting Difficulty
+- (IBAction) segmentSelected: (id) sender {
+    if ([sender selectedSegmentIndex] == kDifficultyEasy)
+    {
+        gameDifficulty = kDifficultyEasy;
+    }
+    if ([sender selectedSegmentIndex] == kDifficultyNormal)
+    {
+        gameDifficulty = kDifficultyNormal;
+    }
+    if ([sender selectedSegmentIndex] == kDifficultyHard)
+    {
+        gameDifficulty = kDifficultyHard;
+    }
+}
+
+// Helper function for removing Keyboard from screen
+- (IBAction)textFieldDoneEditing:(id)sender {
+	[sender resignFirstResponder];
+}
+
+// Helper function for removing Keyboard from screen
+- (IBAction)backgroundTap:(id)sender {
+    [playerName resignFirstResponder];	
+}
+
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -50,6 +115,10 @@
 
 
 - (void)dealloc {
+    [playerName release];
+    [levelLabel release];
+    [backButton release];
+    [saveButton release];
     [super dealloc];
 }
 

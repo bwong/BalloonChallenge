@@ -8,45 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		0A24546911214737009A536A /* game_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A24546811214737009A536A /* game_bg.png */; };
+		0A3583761133B7AF0095B62A /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3583751133B7AF0095B62A /* GameView.m */; };
+		0A358517113510D10095B62A /* Balloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A358516113510D10095B62A /* Balloon.m */; };
 		0A49A07211337C5200206894 /* blue_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A49A07111337C5200206894 /* blue_balloon.png */; };
+		0A7DD92811365E3E00392A44 /* BalloonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7DD92711365E3E00392A44 /* BalloonFactory.m */; };
+		0A7E98AA113612C800CD5453 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E989D113612C800CD5453 /* HelpViewController.xib */; };
+		0A7E98AB113612C800CD5453 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E989F113612C800CD5453 /* HelpViewController.m */; };
+		0A7E98AC113612C800CD5453 /* HighScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98A0113612C800CD5453 /* HighScoresViewController.m */; };
+		0A7E98AD113612C800CD5453 /* HighScoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98A1113612C800CD5453 /* HighScoresViewController.xib */; };
+		0A7E98AE113612C800CD5453 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98A3113612C800CD5453 /* OptionsViewController.xib */; };
+		0A7E98AF113612C800CD5453 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98A5113612C800CD5453 /* OptionsViewController.m */; };
+		0A7E98B0113612C800CD5453 /* PlayerDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98A6113612C800CD5453 /* PlayerDatabase.m */; };
+		0A7E98B1113612C800CD5453 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98A8113612C800CD5453 /* Player.m */; };
+		0A7E98CE113613DA00CD5453 /* BalloonChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */; };
+		0A7E98D21136146A00CD5453 /* BalloonChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */; };
+		0A7E98D7113614A100CD5453 /* BalloonChallengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */; };
+		0A7E98DB113614DA00CD5453 /* balloonsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98DA113614DA00CD5453 /* balloonsBackground.png */; };
 		0ABCD217113228A200B62EB0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABCD215113228A200B62EB0 /* GameViewController.m */; };
 		0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABCD216113228A200B62EB0 /* GameViewController.xib */; };
-		1D3623260D0F684500981E51 /* BalloonChallengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BalloonChallengeAppDelegate.m */; };
-		1D3A678D1122975D00C55F47 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A678B1122975D00C55F47 /* OptionsViewController.m */; };
-		1D3A678E1122975D00C55F47 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3A678C1122975D00C55F47 /* OptionsViewController.xib */; };
-		1D3A679D112297CA00C55F47 /* HighScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3A679B112297CA00C55F47 /* HighScoresViewController.m */; };
-		1D3A679E112297CA00C55F47 /* HighScoresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D3A679C112297CA00C55F47 /* HighScoresViewController.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
-		2899E5220DE3E06400AC0155 /* BalloonChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* BalloonChallengeViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		28D7ACF80DDB3853001CB0EB /* BalloonChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BalloonChallengeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A24546811214737009A536A /* game_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_bg.png; sourceTree = "<group>"; };
+		0A3583741133B7AF0095B62A /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		0A3583751133B7AF0095B62A /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		0A358515113510D10095B62A /* Balloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Balloon.h; sourceTree = "<group>"; };
+		0A358516113510D10095B62A /* Balloon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Balloon.m; sourceTree = "<group>"; };
 		0A49A07111337C5200206894 /* blue_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_balloon.png; sourceTree = "<group>"; };
+		0A7DD92611365E3E00392A44 /* BalloonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonFactory.h; sourceTree = "<group>"; };
+		0A7DD92711365E3E00392A44 /* BalloonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonFactory.m; sourceTree = "<group>"; };
+		0A7E989D113612C800CD5453 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		0A7E989E113612C800CD5453 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		0A7E989F113612C800CD5453 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		0A7E98A0113612C800CD5453 /* HighScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresViewController.m; sourceTree = "<group>"; };
+		0A7E98A1113612C800CD5453 /* HighScoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HighScoresViewController.xib; path = Classes/HighScoresViewController.xib; sourceTree = "<group>"; };
+		0A7E98A2113612C800CD5453 /* HighScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoresViewController.h; sourceTree = "<group>"; };
+		0A7E98A3113612C800CD5453 /* OptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OptionsViewController.xib; path = Classes/OptionsViewController.xib; sourceTree = "<group>"; };
+		0A7E98A4113612C800CD5453 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		0A7E98A5113612C800CD5453 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		0A7E98A6113612C800CD5453 /* PlayerDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDatabase.m; sourceTree = "<group>"; };
+		0A7E98A7113612C800CD5453 /* PlayerDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDatabase.h; sourceTree = "<group>"; };
+		0A7E98A8113612C800CD5453 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		0A7E98A9113612C800CD5453 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalloonChallengeViewController.xib; sourceTree = "<group>"; };
+		0A7E98D01136146A00CD5453 /* BalloonChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeViewController.h; sourceTree = "<group>"; };
+		0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeViewController.m; sourceTree = "<group>"; };
+		0A7E98D5113614A100CD5453 /* BalloonChallengeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeAppDelegate.h; sourceTree = "<group>"; };
+		0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeAppDelegate.m; sourceTree = "<group>"; };
+		0A7E98DA113614DA00CD5453 /* balloonsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonsBackground.png; sourceTree = "<group>"; };
 		0ABCD214113228A200B62EB0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		0ABCD215113228A200B62EB0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		0ABCD216113228A200B62EB0 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* BalloonChallengeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeAppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* BalloonChallengeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeAppDelegate.m; sourceTree = "<group>"; };
-		1D3A678A1122975D00C55F47 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
-		1D3A678B1122975D00C55F47 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
-		1D3A678C1122975D00C55F47 /* OptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OptionsViewController.xib; path = Classes/OptionsViewController.xib; sourceTree = "<group>"; };
-		1D3A679A112297CA00C55F47 /* HighScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoresViewController.h; sourceTree = "<group>"; };
-		1D3A679B112297CA00C55F47 /* HighScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresViewController.m; sourceTree = "<group>"; };
-		1D3A679C112297CA00C55F47 /* HighScoresViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HighScoresViewController.xib; path = Classes/HighScoresViewController.xib; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* BalloonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2899E5210DE3E06400AC0155 /* BalloonChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalloonChallengeViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		28D7ACF60DDB3853001CB0EB /* BalloonChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeViewController.h; sourceTree = "<group>"; };
-		28D7ACF70DDB3853001CB0EB /* BalloonChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* BalloonChallenge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallenge_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* BalloonChallenge-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BalloonChallenge-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -69,16 +91,29 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1D3623240D0F684500981E51 /* BalloonChallengeAppDelegate.h */,
-				1D3623250D0F684500981E51 /* BalloonChallengeAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* BalloonChallengeViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* BalloonChallengeViewController.m */,
-				1D3A678A1122975D00C55F47 /* OptionsViewController.h */,
-				1D3A678B1122975D00C55F47 /* OptionsViewController.m */,
-				1D3A679A112297CA00C55F47 /* HighScoresViewController.h */,
-				1D3A679B112297CA00C55F47 /* HighScoresViewController.m */,
+				0A7E98D01136146A00CD5453 /* BalloonChallengeViewController.h */,
+				0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */,
+				0A7E98D5113614A100CD5453 /* BalloonChallengeAppDelegate.h */,
+				0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */,
+				0A7E989D113612C800CD5453 /* HelpViewController.xib */,
+				0A7E989E113612C800CD5453 /* HelpViewController.h */,
+				0A7E989F113612C800CD5453 /* HelpViewController.m */,
+				0A7E98A0113612C800CD5453 /* HighScoresViewController.m */,
+				0A7E98A2113612C800CD5453 /* HighScoresViewController.h */,
+				0A7E98A4113612C800CD5453 /* OptionsViewController.h */,
+				0A7E98A5113612C800CD5453 /* OptionsViewController.m */,
+				0A7E98A6113612C800CD5453 /* PlayerDatabase.m */,
+				0A7E98A7113612C800CD5453 /* PlayerDatabase.h */,
+				0A7E98A8113612C800CD5453 /* Player.m */,
+				0A7E98A9113612C800CD5453 /* Player.h */,
 				0ABCD214113228A200B62EB0 /* GameViewController.h */,
 				0ABCD215113228A200B62EB0 /* GameViewController.m */,
+				0A3583741133B7AF0095B62A /* GameView.h */,
+				0A3583751133B7AF0095B62A /* GameView.m */,
+				0A358515113510D10095B62A /* Balloon.h */,
+				0A7DD92611365E3E00392A44 /* BalloonFactory.h */,
+				0A7DD92711365E3E00392A44 /* BalloonFactory.m */,
+				0A358516113510D10095B62A /* Balloon.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -115,13 +150,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A7E98DA113614DA00CD5453 /* balloonsBackground.png */,
+				0A7E98A3113612C800CD5453 /* OptionsViewController.xib */,
+				0A7E98A1113612C800CD5453 /* HighScoresViewController.xib */,
 				0A49A07111337C5200206894 /* blue_balloon.png */,
-				1D3A679C112297CA00C55F47 /* HighScoresViewController.xib */,
+				0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */,
 				0A24546811214737009A536A /* game_bg.png */,
-				2899E5210DE3E06400AC0155 /* BalloonChallengeViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				0ABCD216113228A200B62EB0 /* GameViewController.xib */,
-				1D3A678C1122975D00C55F47 /* OptionsViewController.xib */,
 				8D1107310486CEB800E47090 /* BalloonChallenge-Info.plist */,
 			);
 			name = Resources;
@@ -180,12 +216,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				2899E5220DE3E06400AC0155 /* BalloonChallengeViewController.xib in Resources */,
 				0A24546911214737009A536A /* game_bg.png in Resources */,
-				1D3A678E1122975D00C55F47 /* OptionsViewController.xib in Resources */,
-				1D3A679E112297CA00C55F47 /* HighScoresViewController.xib in Resources */,
 				0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */,
 				0A49A07211337C5200206894 /* blue_balloon.png in Resources */,
+				0A7E98AA113612C800CD5453 /* HelpViewController.xib in Resources */,
+				0A7E98AD113612C800CD5453 /* HighScoresViewController.xib in Resources */,
+				0A7E98AE113612C800CD5453 /* OptionsViewController.xib in Resources */,
+				0A7E98CE113613DA00CD5453 /* BalloonChallengeViewController.xib in Resources */,
+				0A7E98DB113614DA00CD5453 /* balloonsBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,11 +235,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* BalloonChallengeAppDelegate.m in Sources */,
-				28D7ACF80DDB3853001CB0EB /* BalloonChallengeViewController.m in Sources */,
-				1D3A678D1122975D00C55F47 /* OptionsViewController.m in Sources */,
-				1D3A679D112297CA00C55F47 /* HighScoresViewController.m in Sources */,
 				0ABCD217113228A200B62EB0 /* GameViewController.m in Sources */,
+				0A3583761133B7AF0095B62A /* GameView.m in Sources */,
+				0A358517113510D10095B62A /* Balloon.m in Sources */,
+				0A7E98AB113612C800CD5453 /* HelpViewController.m in Sources */,
+				0A7E98AC113612C800CD5453 /* HighScoresViewController.m in Sources */,
+				0A7E98AF113612C800CD5453 /* OptionsViewController.m in Sources */,
+				0A7E98B0113612C800CD5453 /* PlayerDatabase.m in Sources */,
+				0A7E98B1113612C800CD5453 /* Player.m in Sources */,
+				0A7E98D21136146A00CD5453 /* BalloonChallengeViewController.m in Sources */,
+				0A7E98D7113614A100CD5453 /* BalloonChallengeAppDelegate.m in Sources */,
+				0A7DD92811365E3E00392A44 /* BalloonFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
