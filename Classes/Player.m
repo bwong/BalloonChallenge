@@ -53,7 +53,20 @@
 	
 }
 
-// TBA - Comparison of Player Objects
+/* Compare against another player alphabetically based on the player's
+ name.  Performs a case-sensitive comparison.  */
+- (NSComparisonResult) compareByName: (Player *) otherPlayer {
+	return [name compare:[otherPlayer name]];
+}
+
+/* Compare against another player based on the highscore.  */
+- (NSComparisonResult) compareByHighScore: (Player *) otherPlayer {
+	if (highscore < [otherPlayer highscore])
+		return NSOrderedAscending;
+	if (highscore > [otherPlayer highscore])
+		return NSOrderedDescending;
+	return NSOrderedSame;
+}
 
 - (void) dealloc {
 	[name release];

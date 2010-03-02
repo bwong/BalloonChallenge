@@ -110,9 +110,9 @@
 				0ABCD215113228A200B62EB0 /* GameViewController.m */,
 				0A3583741133B7AF0095B62A /* GameView.h */,
 				0A3583751133B7AF0095B62A /* GameView.m */,
-				0A358515113510D10095B62A /* Balloon.h */,
 				0A7DD92611365E3E00392A44 /* BalloonFactory.h */,
 				0A7DD92711365E3E00392A44 /* BalloonFactory.m */,
+				0A358515113510D10095B62A /* Balloon.h */,
 				0A358516113510D10095B62A /* Balloon.m */,
 			);
 			path = Classes;

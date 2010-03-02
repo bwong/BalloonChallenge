@@ -39,6 +39,8 @@
                      withDifficultySettingAt:gameDifficulty 
                            andLevelSettingAt:level 
                               andHighscoreOf:0];
+    
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 // Switching Levels

@@ -27,6 +27,13 @@
         andLevel: (int) newLevel
         andHighscore: (int) newHighscore;
 
+/* Compare against another player alphabetically based on the player's
+ name.  Performs a case-sensitive comparison.  */
+- (NSComparisonResult) compareByName: (Player *) otherPlayer;
+
+/* Compare against another player based on the highscore.  */
+- (NSComparisonResult) compareByHighScore: (Player *) otherPlayer;
+
 - (void) dealloc;
 
 @end
