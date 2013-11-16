@@ -11,9 +11,16 @@
 
 
 @interface GameView : UIView{
+	UITextView *textView;
+	UIImageView *textBackground;
+
+	id gameDelegate;
 	UIImageView *backgroundImg;
-	UIImage *drawImage;
 }
+@property (nonatomic,retain) id gameDelegate;
+
 @property (nonatomic,retain) IBOutlet UIImageView *backgroundImg;
-@property (nonatomic,retain) IBOutlet UIImage *drawImage;
+@property (nonatomic,retain) IBOutlet UIImageView *textBackground;
+@property (nonatomic,retain) IBOutlet UITextView *textView;
+
 @end

@@ -3,14 +3,54 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A24546911214737009A536A /* game_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A24546811214737009A536A /* game_bg.png */; };
+		0A0BAE7411C68E5A00D53FCD /* balloon.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BAE7211C68E5A00D53FCD /* balloon.caf */; };
+		0A0BAE7511C68E5A00D53FCD /* balloon1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0A0BAE7311C68E5A00D53FCD /* balloon1.caf */; };
+		0A0EEFF2117106D80097B1A8 /* bg_space.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0EEFF1117106D80097B1A8 /* bg_space.png */; };
+		0A12B8CE11755AA100C6318D /* bg_balloons.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A12B8C911755AA100C6318D /* bg_balloons.png */; };
+		0A12B8DA11755ABB00C6318D /* title_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A12B8D311755ABB00C6318D /* title_balloon.png */; };
+		0A12B8DB11755ABB00C6318D /* title_challenge.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A12B8D411755ABB00C6318D /* title_challenge.png */; };
+		0A1D8B93117BD00A00BE5EE1 /* GameTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D8B92117BD00A00BE5EE1 /* GameTextView.m */; };
+		0A1D8F76118393D700BE5EE1 /* GameSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D8F74118393D700BE5EE1 /* GameSelectViewController.m */; };
+		0A1D8F77118393D700BE5EE1 /* GameSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D8F75118393D700BE5EE1 /* GameSelectViewController.xib */; };
+		0A1D9C391147613A00955C93 /* MathChallenge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D9C371147613A00955C93 /* MathChallenge.m */; };
+		0A1D9C4C114761B900955C93 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1D9C4B114761B900955C93 /* GameViewController.xib */; };
+		0A24546911214737009A536A /* bg_butterfly.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A24546811214737009A536A /* bg_butterfly.png */; };
+		0A27D74F11CF44C50055206A /* IpadHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27D74E11CF44C40055206A /* IpadHelpViewController.m */; };
+		0A27D82811CFC02B0055206A /* IpadHighScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A27D82611CFC02B0055206A /* IpadHighScoreViewController.m */; };
+		0A27D82911CFC02B0055206A /* IpadHighScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A27D82711CFC02B0055206A /* IpadHighScoreViewController.xib */; };
+		0A27D95211CFC4E50055206A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A27D95111CFC4E50055206A /* UIKit.framework */; };
 		0A3583761133B7AF0095B62A /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3583751133B7AF0095B62A /* GameView.m */; };
 		0A358517113510D10095B62A /* Balloon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A358516113510D10095B62A /* Balloon.m */; };
-		0A49A07211337C5200206894 /* blue_balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A49A07111337C5200206894 /* blue_balloon.png */; };
+		0A4A56EE12DF6B0500BECEC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A4A56ED12DF6B0500BECEC7 /* QuartzCore.framework */; };
+		0A4A58AE12DFFE3100BECEC7 /* BPC_icon_factor_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A58AC12DFFE3100BECEC7 /* BPC_icon_factor_tree.png */; };
+		0A4A58AF12DFFE3100BECEC7 /* BPC_icon_multiples.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A58AD12DFFE3100BECEC7 /* BPC_icon_multiples.png */; };
+		0A4A590412E0172500BECEC7 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A590112E0172500BECEC7 /* Default-Landscape.png */; };
+		0A4A590512E0172500BECEC7 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A590212E0172500BECEC7 /* Default-Portrait.png */; };
+		0A4A590612E0172500BECEC7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A590312E0172500BECEC7 /* Default.png */; };
+		0A4A591E12E0229B00BECEC7 /* btn_letsgo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A591C12E0229B00BECEC7 /* btn_letsgo.png */; };
+		0A4A591F12E0229B00BECEC7 /* btn_letsgo_ROLL.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A591D12E0229B00BECEC7 /* btn_letsgo_ROLL.png */; };
+		0A4A592112E022BD00BECEC7 /* bg_welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A592012E022BD00BECEC7 /* bg_welcome.png */; };
+		0A4A599E12E0CEF100BECEC7 /* bg_welcomeframe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A599D12E0CEF100BECEC7 /* bg_welcomeframe.png */; };
+		0A4A5A6412E0EC2D00BECEC7 /* icon_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A5A6212E0EC2D00BECEC7 /* icon_off.png */; };
+		0A4A5A6512E0EC2D00BECEC7 /* icon_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A4A5A6312E0EC2D00BECEC7 /* icon_on.png */; };
+		0A5122AD118E2E71008B514F /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5122AB118E2E71008B514F /* GameOverViewController.m */; };
+		0A5122AE118E2E71008B514F /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5122AC118E2E71008B514F /* GameOverViewController.xib */; };
+		0A523D3A1183E3D000368A28 /* balloon_red_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A523D391183E3D000368A28 /* balloon_red_bg.png */; };
+		0A523D6F1183EE3000368A28 /* balloon_blue_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A523D6E1183EE3000368A28 /* balloon_blue_bg.png */; };
+		0A523EBF1185322F00368A28 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A523EBD1185322E00368A28 /* PageViewController.m */; };
+		0A523EC21185323A00368A28 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A523EC11185323A00368A28 /* DataSource.m */; };
+		0A523F01118562A800368A28 /* HelpView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A523F00118562A800368A28 /* HelpView1.xib */; };
+		0A523F061185651400368A28 /* HelpView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A523F051185651400368A28 /* HelpView2.xib */; };
+		0A73D8C311DDBC4E00AE2C0B /* balloon_red_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A73D8C211DDBC4E00AE2C0B /* balloon_red_cross.png */; };
+		0A74E1D211F962C40096543A /* btn_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A74E1D111F962C40096543A /* btn_play.png */; };
+		0A74E26611F986950096543A /* gemdroids.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0A74E26511F986950096543A /* gemdroids.caf */; };
+		0A7D1CC51199A1CA00F0CE75 /* ChallengeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D1CC41199A1CA00F0CE75 /* ChallengeGroup.m */; };
+		0A7D1D5F119F344A00F0CE75 /* GroupFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D1D5E119F344A00F0CE75 /* GroupFactory.m */; };
+		0A7D1E5511A23A5F00F0CE75 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D1E5411A23A5F00F0CE75 /* Level.m */; };
 		0A7DD92811365E3E00392A44 /* BalloonFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7DD92711365E3E00392A44 /* BalloonFactory.m */; };
 		0A7E98AA113612C800CD5453 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E989D113612C800CD5453 /* HelpViewController.xib */; };
 		0A7E98AB113612C800CD5453 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E989F113612C800CD5453 /* HelpViewController.m */; };
@@ -23,26 +63,136 @@
 		0A7E98CE113613DA00CD5453 /* BalloonChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */; };
 		0A7E98D21136146A00CD5453 /* BalloonChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */; };
 		0A7E98D7113614A100CD5453 /* BalloonChallengeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */; };
-		0A7E98DB113614DA00CD5453 /* balloonsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A7E98DA113614DA00CD5453 /* balloonsBackground.png */; };
+		0A7ECF6A11C8AF24009C287B /* gardens.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0A7ECF6811C8AF24009C287B /* gardens.caf */; };
+		0A7ECF6B11C8AF24009C287B /* three-drops.caf in Resources */ = {isa = PBXBuildFile; fileRef = 0A7ECF6911C8AF24009C287B /* three-drops.caf */; };
+		0A883A7F11AB63E600520AF5 /* PracticeSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A883A7D11AB63E600520AF5 /* PracticeSelectViewController.m */; };
+		0A883AF811AB9B4D00520AF5 /* PracticeSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A883AF711AB9B4D00520AF5 /* PracticeSelectViewController.xib */; };
+		0A883BB411ACD81100520AF5 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A883BB111ACD81100520AF5 /* A.png */; };
+		0A883BB511ACD81100520AF5 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A883BB211ACD81100520AF5 /* B.png */; };
+		0A883BB611ACD81100520AF5 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A883BB311ACD81100520AF5 /* C.png */; };
+		0A883BBC11ACD82C00520AF5 /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A883BB911ACD82C00520AF5 /* x.png */; };
+		0A8DD8F41161A7A500D7FCAA /* ChallengeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DD8F31161A7A500D7FCAA /* ChallengeFactory.m */; };
+		0A8ED89211DA93100037C971 /* IpadGameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED89111DA93100037C971 /* IpadGameOverViewController.xib */; };
+		0A8ED93F11DC25C20037C971 /* balloon_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED93E11DC25C20037C971 /* balloon_red.png */; };
+		0A8ED96F11DC2EF30037C971 /* balloon_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED96E11DC2EF30037C971 /* balloon_yellow.png */; };
+		0A8ED99111DC3E8E0037C971 /* balloon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED99011DC3E8E0037C971 /* balloon_blue.png */; };
+		0A8ED9A511DC48560037C971 /* balloon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A8ED9A411DC48560037C971 /* balloon_green.png */; };
+		0A916C741193A69000CF9853 /* bg_clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A916C731193A69000CF9853 /* bg_clouds.png */; };
+		0A91C20C11DF0FCD004EE76D /* bg_dock_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A91C20B11DF0FCD004EE76D /* bg_dock_1024.png */; };
+		0A91C26111DF208A004EE76D /* icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A91C26011DF208A004EE76D /* icon_72.png */; };
+		0A91C5E911EAD662004EE76D /* TimeChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C5E711EAD662004EE76D /* TimeChallengeViewController.m */; };
+		0A91C5EA11EAD662004EE76D /* TimeChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A91C5E811EAD662004EE76D /* TimeChallengeViewController.xib */; };
+		0A91C5F311EAEA8F004EE76D /* TimeChallengeSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A91C5F111EAEA8F004EE76D /* TimeChallengeSelectViewController.m */; };
+		0A91C5F411EAEA8F004EE76D /* TimeChallengeSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A91C5F211EAEA8F004EE76D /* TimeChallengeSelectViewController.xib */; };
+		0A93880711B8BA97007945B2 /* btn_play_old.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A93880611B8BA97007945B2 /* btn_play_old.png */; };
+		0A93881D11B8BBC8007945B2 /* btn_options.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A93881A11B8BBC8007945B2 /* btn_options.png */; };
+		0A93882111B8BDBC007945B2 /* btn_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A93882011B8BDBC007945B2 /* btn_help.png */; };
+		0A9389F111BCA4C6007945B2 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9389F011BCA4C6007945B2 /* icon.png */; };
+		0A938AC111BDF300007945B2 /* btn_grades.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A938AC011BDF300007945B2 /* btn_grades.png */; };
+		0A938BD311BE1E53007945B2 /* btn_practice.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A938BD211BE1E53007945B2 /* btn_practice.png */; };
+		0AA214B011CD4926004CF0F0 /* PlayerSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA214AE11CD4926004CF0F0 /* PlayerSelectViewController.m */; };
+		0AA2150111CD62F5004CF0F0 /* PlayerSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AA2150011CD62F5004CF0F0 /* PlayerSelectViewController.xib */; };
 		0ABCD217113228A200B62EB0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABCD215113228A200B62EB0 /* GameViewController.m */; };
-		0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABCD216113228A200B62EB0 /* GameViewController.xib */; };
+		0ABFF87611F105D900BBA65A /* TimeChallengeStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABFF87511F105D900BBA65A /* TimeChallengeStats.m */; };
+		0ABFF9B911F16DFD00BBA65A /* btn_learn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFF9B811F16DFD00BBA65A /* btn_learn.png */; };
+		0ABFFA3811F27D1F00BBA65A /* title_pop.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA3711F27D1F00BBA65A /* title_pop.png */; };
+		0ABFFA5311F2879C00BBA65A /* BPC_icon_addition.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA4F11F2879C00BBA65A /* BPC_icon_addition.png */; };
+		0ABFFA5411F2879C00BBA65A /* BPC_icon_multiply.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA5011F2879C00BBA65A /* BPC_icon_multiply.png */; };
+		0ABFFA5511F2879C00BBA65A /* BPC_icon_spectrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA5111F2879C00BBA65A /* BPC_icon_spectrum.png */; };
+		0ABFFA5611F2879C00BBA65A /* BPC_icon_subtract.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA5211F2879C00BBA65A /* BPC_icon_subtract.png */; };
+		0ABFFA5A11F287C400BBA65A /* BPC_icon_divide.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA5911F287C400BBA65A /* BPC_icon_divide.png */; };
+		0ABFFA5D11F28A4500BBA65A /* BPC_icon_oddandeven.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA5C11F28A4500BBA65A /* BPC_icon_oddandeven.png */; };
+		0ABFFA8D11F28EF900BBA65A /* BPC_view_levelup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFA8C11F28EF900BBA65A /* BPC_view_levelup.png */; };
+		0ABFFC3B11F4253500BBA65A /* IpadTimeChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFC3A11F4253500BBA65A /* IpadTimeChallengeViewController.xib */; };
+		0ABFFC3D11F4255800BBA65A /* IpadTimeChallengeSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABFFC3C11F4255800BBA65A /* IpadTimeChallengeSelectViewController.xib */; };
+		0ACA094B11B014B9004AEA0F /* GameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACA094A11B014B9004AEA0F /* GameState.m */; };
+		0ACA852611A50F960080E85B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACA852511A50F960080E85B /* AudioToolbox.framework */; };
+		0ACA854711A512FB0080E85B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACA854611A512FB0080E85B /* AVFoundation.framework */; };
+		0AD3B80B11651562001F1AF3 /* MyRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD3B80A11651562001F1AF3 /* MyRange.m */; };
+		0AD91728134A32170010331A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD91727134A32170010331A /* SystemConfiguration.framework */; };
+		0AE0C7C711680EBD00FAE72F /* PlayerStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE0C7C611680EBD00FAE72F /* PlayerStats.m */; };
+		0AF671A711CC787F00837872 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671A611CC787F00837872 /* MainWindow-iPad.xib */; };
+		0AF671AC11CC797400837872 /* IpadBalloonChallengeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671AA11CC797400837872 /* IpadBalloonChallengeViewController.xib */; };
+		0AF671C511CC7DCB00837872 /* IpadOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671C411CC7DCB00837872 /* IpadOptionsViewController.xib */; };
+		0AF671F511CC947E00837872 /* IpadHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671F411CC947E00837872 /* IpadHelpViewController.xib */; };
+		0AF671F711CC94A800837872 /* IpadPracticeSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671F611CC94A800837872 /* IpadPracticeSelectViewController.xib */; };
+		0AF671F911CC94CF00837872 /* IpadGameSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671F811CC94CF00837872 /* IpadGameSelectViewController.xib */; };
+		0AF671FB11CC951600837872 /* IpadGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF671FA11CC951600837872 /* IpadGameViewController.xib */; };
+		0AFBC5A4115706E900B99416 /* HighScoreArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBC5A0115706E900B99416 /* HighScoreArray.m */; };
+		0AFBC5A5115706E900B99416 /* HighScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFBC5A2115706E900B99416 /* HighScore.m */; };
+		1D04C4F8113E6351005AD12F /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D04C4F6113E6351005AD12F /* PlayerViewController.m */; };
+		1D04C4F9113E6351005AD12F /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D04C4F7113E6351005AD12F /* PlayerViewController.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1D81D3981145DA7E002DF905 /* NewPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D81D3961145DA7E002DF905 /* NewPlayerViewController.m */; };
+		1D81D3991145DA7E002DF905 /* NewPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D81D3971145DA7E002DF905 /* NewPlayerViewController.xib */; };
+		26E2C1E51837544500B9CA78 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26E2C1E41837544500B9CA78 /* Default-568h@2x.png */; };
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A24546811214737009A536A /* game_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_bg.png; sourceTree = "<group>"; };
+		0A0BAE7211C68E5A00D53FCD /* balloon.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = balloon.caf; sourceTree = "<group>"; };
+		0A0BAE7311C68E5A00D53FCD /* balloon1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = balloon1.caf; sourceTree = "<group>"; };
+		0A0EEFF1117106D80097B1A8 /* bg_space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_space.png; sourceTree = "<group>"; };
+		0A12B8C911755AA100C6318D /* bg_balloons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_balloons.png; sourceTree = "<group>"; };
+		0A12B8D311755ABB00C6318D /* title_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_balloon.png; sourceTree = "<group>"; };
+		0A12B8D411755ABB00C6318D /* title_challenge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_challenge.png; sourceTree = "<group>"; };
+		0A1D8B91117BD00A00BE5EE1 /* GameTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTextView.h; sourceTree = "<group>"; };
+		0A1D8B92117BD00A00BE5EE1 /* GameTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTextView.m; sourceTree = "<group>"; };
+		0A1D8F73118393D700BE5EE1 /* GameSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSelectViewController.h; sourceTree = "<group>"; };
+		0A1D8F74118393D700BE5EE1 /* GameSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSelectViewController.m; sourceTree = "<group>"; };
+		0A1D8F75118393D700BE5EE1 /* GameSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameSelectViewController.xib; path = Classes/GameSelectViewController.xib; sourceTree = "<group>"; };
+		0A1D9C371147613A00955C93 /* MathChallenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathChallenge.m; sourceTree = "<group>"; };
+		0A1D9C381147613A00955C93 /* MathChallenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathChallenge.h; sourceTree = "<group>"; };
+		0A1D9C4B114761B900955C93 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		0A24546811214737009A536A /* bg_butterfly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_butterfly.png; sourceTree = "<group>"; };
+		0A27D74D11CF44C40055206A /* IpadHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpadHelpViewController.h; sourceTree = "<group>"; };
+		0A27D74E11CF44C40055206A /* IpadHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpadHelpViewController.m; sourceTree = "<group>"; };
+		0A27D82511CFC02B0055206A /* IpadHighScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpadHighScoreViewController.h; sourceTree = "<group>"; };
+		0A27D82611CFC02B0055206A /* IpadHighScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpadHighScoreViewController.m; sourceTree = "<group>"; };
+		0A27D82711CFC02B0055206A /* IpadHighScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = IpadHighScoreViewController.xib; path = Classes/IpadHighScoreViewController.xib; sourceTree = "<group>"; };
+		0A27D95111CFC4E50055206A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0A3583741133B7AF0095B62A /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
 		0A3583751133B7AF0095B62A /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
 		0A358515113510D10095B62A /* Balloon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Balloon.h; sourceTree = "<group>"; };
 		0A358516113510D10095B62A /* Balloon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Balloon.m; sourceTree = "<group>"; };
-		0A49A07111337C5200206894 /* blue_balloon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_balloon.png; sourceTree = "<group>"; };
+		0A4A56ED12DF6B0500BECEC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0A4A58AC12DFFE3100BECEC7 /* BPC_icon_factor_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_factor_tree.png; sourceTree = "<group>"; };
+		0A4A58AD12DFFE3100BECEC7 /* BPC_icon_multiples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_multiples.png; sourceTree = "<group>"; };
+		0A4A590112E0172500BECEC7 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		0A4A590212E0172500BECEC7 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		0A4A590312E0172500BECEC7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0A4A591C12E0229B00BECEC7 /* btn_letsgo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_letsgo.png; sourceTree = "<group>"; };
+		0A4A591D12E0229B00BECEC7 /* btn_letsgo_ROLL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_letsgo_ROLL.png; sourceTree = "<group>"; };
+		0A4A592012E022BD00BECEC7 /* bg_welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_welcome.png; sourceTree = "<group>"; };
+		0A4A599D12E0CEF100BECEC7 /* bg_welcomeframe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_welcomeframe.png; sourceTree = "<group>"; };
+		0A4A5A6212E0EC2D00BECEC7 /* icon_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_off.png; sourceTree = "<group>"; };
+		0A4A5A6312E0EC2D00BECEC7 /* icon_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_on.png; sourceTree = "<group>"; };
+		0A5122AA118E2E71008B514F /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		0A5122AB118E2E71008B514F /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		0A5122AC118E2E71008B514F /* GameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameOverViewController.xib; path = Classes/GameOverViewController.xib; sourceTree = "<group>"; };
+		0A523D391183E3D000368A28 /* balloon_red_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_red_bg.png; sourceTree = "<group>"; };
+		0A523D6E1183EE3000368A28 /* balloon_blue_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_blue_bg.png; sourceTree = "<group>"; };
+		0A523EBC1185322E00368A28 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		0A523EBD1185322E00368A28 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		0A523EC01185323A00368A28 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		0A523EC11185323A00368A28 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		0A523EC51185328600368A28 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		0A523F00118562A800368A28 /* HelpView1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpView1.xib; sourceTree = "<group>"; };
+		0A523F051185651400368A28 /* HelpView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpView2.xib; sourceTree = "<group>"; };
+		0A73D8C211DDBC4E00AE2C0B /* balloon_red_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_red_cross.png; sourceTree = "<group>"; };
+		0A74E1D111F962C40096543A /* btn_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_play.png; sourceTree = "<group>"; };
+		0A74E26511F986950096543A /* gemdroids.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gemdroids.caf; sourceTree = "<group>"; };
+		0A7D1CC31199A1CA00F0CE75 /* ChallengeGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeGroup.h; sourceTree = "<group>"; };
+		0A7D1CC41199A1CA00F0CE75 /* ChallengeGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeGroup.m; sourceTree = "<group>"; };
+		0A7D1D5D119F344A00F0CE75 /* GroupFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupFactory.h; sourceTree = "<group>"; };
+		0A7D1D5E119F344A00F0CE75 /* GroupFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupFactory.m; sourceTree = "<group>"; };
+		0A7D1E5311A23A5F00F0CE75 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		0A7D1E5411A23A5F00F0CE75 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		0A7DD92611365E3E00392A44 /* BalloonFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonFactory.h; sourceTree = "<group>"; };
 		0A7DD92711365E3E00392A44 /* BalloonFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonFactory.m; sourceTree = "<group>"; };
-		0A7E989D113612C800CD5453 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		0A7E989D113612C800CD5453 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpViewController.xib; path = Classes/HelpViewController.xib; sourceTree = "<group>"; };
 		0A7E989E113612C800CD5453 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		0A7E989F113612C800CD5453 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		0A7E98A0113612C800CD5453 /* HighScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresViewController.m; sourceTree = "<group>"; };
@@ -60,13 +210,84 @@
 		0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeViewController.m; sourceTree = "<group>"; };
 		0A7E98D5113614A100CD5453 /* BalloonChallengeAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalloonChallengeAppDelegate.h; sourceTree = "<group>"; };
 		0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalloonChallengeAppDelegate.m; sourceTree = "<group>"; };
-		0A7E98DA113614DA00CD5453 /* balloonsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloonsBackground.png; sourceTree = "<group>"; };
+		0A7ECF6811C8AF24009C287B /* gardens.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gardens.caf; sourceTree = "<group>"; };
+		0A7ECF6911C8AF24009C287B /* three-drops.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "three-drops.caf"; sourceTree = "<group>"; };
+		0A883A7C11AB63E600520AF5 /* PracticeSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeSelectViewController.h; sourceTree = "<group>"; };
+		0A883A7D11AB63E600520AF5 /* PracticeSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeSelectViewController.m; sourceTree = "<group>"; };
+		0A883AF711AB9B4D00520AF5 /* PracticeSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PracticeSelectViewController.xib; path = Classes/PracticeSelectViewController.xib; sourceTree = "<group>"; };
+		0A883BB111ACD81100520AF5 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		0A883BB211ACD81100520AF5 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		0A883BB311ACD81100520AF5 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		0A883BB911ACD82C00520AF5 /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x.png; sourceTree = "<group>"; };
+		0A8DD8F21161A7A500D7FCAA /* ChallengeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeFactory.h; sourceTree = "<group>"; };
+		0A8DD8F31161A7A500D7FCAA /* ChallengeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeFactory.m; sourceTree = "<group>"; };
+		0A8ED89111DA93100037C971 /* IpadGameOverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadGameOverViewController.xib; sourceTree = "<group>"; };
+		0A8ED93E11DC25C20037C971 /* balloon_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_red.png; sourceTree = "<group>"; };
+		0A8ED96E11DC2EF30037C971 /* balloon_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_yellow.png; sourceTree = "<group>"; };
+		0A8ED99011DC3E8E0037C971 /* balloon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_blue.png; sourceTree = "<group>"; };
+		0A8ED9A411DC48560037C971 /* balloon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_green.png; sourceTree = "<group>"; };
+		0A916C731193A69000CF9853 /* bg_clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_clouds.png; sourceTree = "<group>"; };
+		0A91C20B11DF0FCD004EE76D /* bg_dock_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_dock_1024.png; sourceTree = "<group>"; };
+		0A91C26011DF208A004EE76D /* icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_72.png; sourceTree = "<group>"; };
+		0A91C5E611EAD662004EE76D /* TimeChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeChallengeViewController.h; sourceTree = "<group>"; };
+		0A91C5E711EAD662004EE76D /* TimeChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeChallengeViewController.m; sourceTree = "<group>"; };
+		0A91C5E811EAD662004EE76D /* TimeChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TimeChallengeViewController.xib; path = Classes/TimeChallengeViewController.xib; sourceTree = "<group>"; };
+		0A91C5F011EAEA8F004EE76D /* TimeChallengeSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeChallengeSelectViewController.h; sourceTree = "<group>"; };
+		0A91C5F111EAEA8F004EE76D /* TimeChallengeSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeChallengeSelectViewController.m; sourceTree = "<group>"; };
+		0A91C5F211EAEA8F004EE76D /* TimeChallengeSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TimeChallengeSelectViewController.xib; path = Classes/TimeChallengeSelectViewController.xib; sourceTree = "<group>"; };
+		0A93880611B8BA97007945B2 /* btn_play_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_play_old.png; sourceTree = "<group>"; };
+		0A93881A11B8BBC8007945B2 /* btn_options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_options.png; sourceTree = "<group>"; };
+		0A93882011B8BDBC007945B2 /* btn_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_help.png; sourceTree = "<group>"; };
+		0A9389F011BCA4C6007945B2 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0A938AC011BDF300007945B2 /* btn_grades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_grades.png; sourceTree = "<group>"; };
+		0A938BD211BE1E53007945B2 /* btn_practice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_practice.png; sourceTree = "<group>"; };
+		0AA214AD11CD4926004CF0F0 /* PlayerSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerSelectViewController.h; sourceTree = "<group>"; };
+		0AA214AE11CD4926004CF0F0 /* PlayerSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerSelectViewController.m; sourceTree = "<group>"; };
+		0AA2150011CD62F5004CF0F0 /* PlayerSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerSelectViewController.xib; sourceTree = "<group>"; };
 		0ABCD214113228A200B62EB0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		0ABCD215113228A200B62EB0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		0ABCD216113228A200B62EB0 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GameViewController.xib; path = Classes/GameViewController.xib; sourceTree = "<group>"; };
+		0ABFF87411F105D900BBA65A /* TimeChallengeStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeChallengeStats.h; sourceTree = "<group>"; };
+		0ABFF87511F105D900BBA65A /* TimeChallengeStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeChallengeStats.m; sourceTree = "<group>"; };
+		0ABFF9B811F16DFD00BBA65A /* btn_learn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_learn.png; sourceTree = "<group>"; };
+		0ABFFA3711F27D1F00BBA65A /* title_pop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title_pop.png; sourceTree = "<group>"; };
+		0ABFFA4F11F2879C00BBA65A /* BPC_icon_addition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_addition.png; sourceTree = "<group>"; };
+		0ABFFA5011F2879C00BBA65A /* BPC_icon_multiply.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_multiply.png; sourceTree = "<group>"; };
+		0ABFFA5111F2879C00BBA65A /* BPC_icon_spectrum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_spectrum.png; sourceTree = "<group>"; };
+		0ABFFA5211F2879C00BBA65A /* BPC_icon_subtract.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_subtract.png; sourceTree = "<group>"; };
+		0ABFFA5911F287C400BBA65A /* BPC_icon_divide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_divide.png; sourceTree = "<group>"; };
+		0ABFFA5C11F28A4500BBA65A /* BPC_icon_oddandeven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_icon_oddandeven.png; sourceTree = "<group>"; };
+		0ABFFA8C11F28EF900BBA65A /* BPC_view_levelup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BPC_view_levelup.png; sourceTree = "<group>"; };
+		0ABFFC3A11F4253500BBA65A /* IpadTimeChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadTimeChallengeViewController.xib; sourceTree = "<group>"; };
+		0ABFFC3C11F4255800BBA65A /* IpadTimeChallengeSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadTimeChallengeSelectViewController.xib; sourceTree = "<group>"; };
+		0ACA094911B014B9004AEA0F /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		0ACA094A11B014B9004AEA0F /* GameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameState.m; sourceTree = "<group>"; };
+		0ACA852511A50F960080E85B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0ACA854611A512FB0080E85B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0AD3B80911651562001F1AF3 /* MyRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRange.h; sourceTree = "<group>"; };
+		0AD3B80A11651562001F1AF3 /* MyRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRange.m; sourceTree = "<group>"; };
+		0AD91727134A32170010331A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0AE0C7C511680EBD00FAE72F /* PlayerStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStats.h; sourceTree = "<group>"; };
+		0AE0C7C611680EBD00FAE72F /* PlayerStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStats.m; sourceTree = "<group>"; };
+		0AF671A611CC787F00837872 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		0AF671AA11CC797400837872 /* IpadBalloonChallengeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadBalloonChallengeViewController.xib; sourceTree = "<group>"; };
+		0AF671C411CC7DCB00837872 /* IpadOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadOptionsViewController.xib; sourceTree = "<group>"; };
+		0AF671F411CC947E00837872 /* IpadHelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadHelpViewController.xib; sourceTree = "<group>"; };
+		0AF671F611CC94A800837872 /* IpadPracticeSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadPracticeSelectViewController.xib; sourceTree = "<group>"; };
+		0AF671F811CC94CF00837872 /* IpadGameSelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadGameSelectViewController.xib; sourceTree = "<group>"; };
+		0AF671FA11CC951600837872 /* IpadGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IpadGameViewController.xib; sourceTree = "<group>"; };
+		0AFBC5A0115706E900B99416 /* HighScoreArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoreArray.m; sourceTree = "<group>"; };
+		0AFBC5A1115706E900B99416 /* HighScore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScore.h; sourceTree = "<group>"; };
+		0AFBC5A2115706E900B99416 /* HighScore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScore.m; sourceTree = "<group>"; };
+		0AFBC5A3115706E900B99416 /* HighScoreArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoreArray.h; sourceTree = "<group>"; };
+		1D04C4F5113E6351005AD12F /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		1D04C4F6113E6351005AD12F /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		1D04C4F7113E6351005AD12F /* PlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayerViewController.xib; path = Classes/PlayerViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* BalloonChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1D81D3951145DA7E002DF905 /* NewPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPlayerViewController.h; sourceTree = "<group>"; };
+		1D81D3961145DA7E002DF905 /* NewPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPlayerViewController.m; sourceTree = "<group>"; };
+		1D81D3971145DA7E002DF905 /* NewPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NewPlayerViewController.xib; path = Classes/NewPlayerViewController.xib; sourceTree = "<group>"; };
+		26E2C1E41837544500B9CA78 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,9 +300,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD91728134A32170010331A /* SystemConfiguration.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				0ACA852611A50F960080E85B /* AudioToolbox.framework in Frameworks */,
+				0ACA854711A512FB0080E85B /* AVFoundation.framework in Frameworks */,
+				0A27D95211CFC4E50055206A /* UIKit.framework in Frameworks */,
+				0A4A56EE12DF6B0500BECEC7 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,31 +316,235 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0A7E98D01136146A00CD5453 /* BalloonChallengeViewController.h */,
-				0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */,
+				0A7D1CC21199A12E00F0CE75 /* ChallengeObjects */,
+				0A1D8FB91183947E00BE5EE1 /* Factory */,
+				0A1D8FB81183945600BE5EE1 /* Views */,
+				0A1D8FB6118393FF00BE5EE1 /* ViewControllers */,
+				0A523EC51185328600368A28 /* SynthesizeSingleton.h */,
+				0A523EC01185323A00368A28 /* DataSource.h */,
+				0A523EC11185323A00368A28 /* DataSource.m */,
+				0AFBC5A1115706E900B99416 /* HighScore.h */,
+				0AFBC5A2115706E900B99416 /* HighScore.m */,
+				0AFBC5A0115706E900B99416 /* HighScoreArray.m */,
+				0AFBC5A3115706E900B99416 /* HighScoreArray.h */,
 				0A7E98D5113614A100CD5453 /* BalloonChallengeAppDelegate.h */,
 				0A7E98D6113614A100CD5453 /* BalloonChallengeAppDelegate.m */,
-				0A7E989D113612C800CD5453 /* HelpViewController.xib */,
-				0A7E989E113612C800CD5453 /* HelpViewController.h */,
-				0A7E989F113612C800CD5453 /* HelpViewController.m */,
-				0A7E98A0113612C800CD5453 /* HighScoresViewController.m */,
-				0A7E98A2113612C800CD5453 /* HighScoresViewController.h */,
-				0A7E98A4113612C800CD5453 /* OptionsViewController.h */,
-				0A7E98A5113612C800CD5453 /* OptionsViewController.m */,
-				0A7E98A6113612C800CD5453 /* PlayerDatabase.m */,
 				0A7E98A7113612C800CD5453 /* PlayerDatabase.h */,
-				0A7E98A8113612C800CD5453 /* Player.m */,
-				0A7E98A9113612C800CD5453 /* Player.h */,
-				0ABCD214113228A200B62EB0 /* GameViewController.h */,
-				0ABCD215113228A200B62EB0 /* GameViewController.m */,
-				0A3583741133B7AF0095B62A /* GameView.h */,
-				0A3583751133B7AF0095B62A /* GameView.m */,
-				0A7DD92611365E3E00392A44 /* BalloonFactory.h */,
-				0A7DD92711365E3E00392A44 /* BalloonFactory.m */,
-				0A358515113510D10095B62A /* Balloon.h */,
-				0A358516113510D10095B62A /* Balloon.m */,
+				0A7E98A6113612C800CD5453 /* PlayerDatabase.m */,
+				0AD3B80911651562001F1AF3 /* MyRange.h */,
+				0AD3B80A11651562001F1AF3 /* MyRange.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0A1D8FB6118393FF00BE5EE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A7E98D01136146A00CD5453 /* BalloonChallengeViewController.h */,
+				0A7E98D11136146A00CD5453 /* BalloonChallengeViewController.m */,
+				0A7E989E113612C800CD5453 /* HelpViewController.h */,
+				0A7E989F113612C800CD5453 /* HelpViewController.m */,
+				0A7E98A2113612C800CD5453 /* HighScoresViewController.h */,
+				0A7E98A0113612C800CD5453 /* HighScoresViewController.m */,
+				0A7E98A4113612C800CD5453 /* OptionsViewController.h */,
+				0A7E98A5113612C800CD5453 /* OptionsViewController.m */,
+				0ABCD214113228A200B62EB0 /* GameViewController.h */,
+				0ABCD215113228A200B62EB0 /* GameViewController.m */,
+				1D04C4F5113E6351005AD12F /* PlayerViewController.h */,
+				1D04C4F6113E6351005AD12F /* PlayerViewController.m */,
+				1D81D3951145DA7E002DF905 /* NewPlayerViewController.h */,
+				1D81D3961145DA7E002DF905 /* NewPlayerViewController.m */,
+				0A523EBC1185322E00368A28 /* PageViewController.h */,
+				0A523EBD1185322E00368A28 /* PageViewController.m */,
+				0A5122AA118E2E71008B514F /* GameOverViewController.h */,
+				0A5122AB118E2E71008B514F /* GameOverViewController.m */,
+				0A1D8F73118393D700BE5EE1 /* GameSelectViewController.h */,
+				0A1D8F74118393D700BE5EE1 /* GameSelectViewController.m */,
+				0A883A7C11AB63E600520AF5 /* PracticeSelectViewController.h */,
+				0A883A7D11AB63E600520AF5 /* PracticeSelectViewController.m */,
+				0AA214AD11CD4926004CF0F0 /* PlayerSelectViewController.h */,
+				0AA214AE11CD4926004CF0F0 /* PlayerSelectViewController.m */,
+				0A27D74D11CF44C40055206A /* IpadHelpViewController.h */,
+				0A27D74E11CF44C40055206A /* IpadHelpViewController.m */,
+				0A27D82511CFC02B0055206A /* IpadHighScoreViewController.h */,
+				0A27D82611CFC02B0055206A /* IpadHighScoreViewController.m */,
+				0A91C5E611EAD662004EE76D /* TimeChallengeViewController.h */,
+				0A91C5E711EAD662004EE76D /* TimeChallengeViewController.m */,
+				0A91C5F011EAEA8F004EE76D /* TimeChallengeSelectViewController.h */,
+				0A91C5F111EAEA8F004EE76D /* TimeChallengeSelectViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A1D8FB81183945600BE5EE1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A358515113510D10095B62A /* Balloon.h */,
+				0A358516113510D10095B62A /* Balloon.m */,
+				0A3583741133B7AF0095B62A /* GameView.h */,
+				0A3583751133B7AF0095B62A /* GameView.m */,
+				0A1D8B91117BD00A00BE5EE1 /* GameTextView.h */,
+				0A1D8B92117BD00A00BE5EE1 /* GameTextView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0A1D8FB91183947E00BE5EE1 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				0A8DD8F21161A7A500D7FCAA /* ChallengeFactory.h */,
+				0A8DD8F31161A7A500D7FCAA /* ChallengeFactory.m */,
+				0A7DD92611365E3E00392A44 /* BalloonFactory.h */,
+				0A7DD92711365E3E00392A44 /* BalloonFactory.m */,
+				0A7D1D5D119F344A00F0CE75 /* GroupFactory.h */,
+				0A7D1D5E119F344A00F0CE75 /* GroupFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		0A1D8FBE1183956A00BE5EE1 /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				0A91C5E811EAD662004EE76D /* TimeChallengeViewController.xib */,
+				0A91C5F211EAEA8F004EE76D /* TimeChallengeSelectViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */,
+				0A883AF711AB9B4D00520AF5 /* PracticeSelectViewController.xib */,
+				0A1D8F75118393D700BE5EE1 /* GameSelectViewController.xib */,
+				0A5122AC118E2E71008B514F /* GameOverViewController.xib */,
+				0A1D9C4B114761B900955C93 /* GameViewController.xib */,
+				0A7E989D113612C800CD5453 /* HelpViewController.xib */,
+				1D81D3971145DA7E002DF905 /* NewPlayerViewController.xib */,
+				1D04C4F7113E6351005AD12F /* PlayerViewController.xib */,
+				0A7E98A3113612C800CD5453 /* OptionsViewController.xib */,
+				0A7E98A1113612C800CD5453 /* HighScoresViewController.xib */,
+				0A523F00118562A800368A28 /* HelpView1.xib */,
+				0A523F051185651400368A28 /* HelpView2.xib */,
+				0AA2150011CD62F5004CF0F0 /* PlayerSelectViewController.xib */,
+			);
+			name = nib;
+			sourceTree = "<group>";
+		};
+		0A1D8FBF1183959F00BE5EE1 /* background */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A599D12E0CEF100BECEC7 /* bg_welcomeframe.png */,
+				0A4A592012E022BD00BECEC7 /* bg_welcome.png */,
+				0A4A590112E0172500BECEC7 /* Default-Landscape.png */,
+				0A4A590212E0172500BECEC7 /* Default-Portrait.png */,
+				0A4A590312E0172500BECEC7 /* Default.png */,
+				0A91C20B11DF0FCD004EE76D /* bg_dock_1024.png */,
+				0A523D6E1183EE3000368A28 /* balloon_blue_bg.png */,
+				0A523D391183E3D000368A28 /* balloon_red_bg.png */,
+				0A916C731193A69000CF9853 /* bg_clouds.png */,
+				0A12B8C911755AA100C6318D /* bg_balloons.png */,
+				0A24546811214737009A536A /* bg_butterfly.png */,
+				0A0EEFF1117106D80097B1A8 /* bg_space.png */,
+			);
+			name = background;
+			sourceTree = "<group>";
+		};
+		0A7D1CC21199A12E00F0CE75 /* ChallengeObjects */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D9C381147613A00955C93 /* MathChallenge.h */,
+				0A1D9C371147613A00955C93 /* MathChallenge.m */,
+				0A7E98A9113612C800CD5453 /* Player.h */,
+				0A7E98A8113612C800CD5453 /* Player.m */,
+				0ABFF87411F105D900BBA65A /* TimeChallengeStats.h */,
+				0ABFF87511F105D900BBA65A /* TimeChallengeStats.m */,
+				0AE0C7C511680EBD00FAE72F /* PlayerStats.h */,
+				0AE0C7C611680EBD00FAE72F /* PlayerStats.m */,
+				0A7D1CC31199A1CA00F0CE75 /* ChallengeGroup.h */,
+				0A7D1CC41199A1CA00F0CE75 /* ChallengeGroup.m */,
+				0A7D1E5311A23A5F00F0CE75 /* Level.h */,
+				0A7D1E5411A23A5F00F0CE75 /* Level.m */,
+				0ACA094911B014B9004AEA0F /* GameState.h */,
+				0ACA094A11B014B9004AEA0F /* GameState.m */,
+			);
+			name = ChallengeObjects;
+			sourceTree = "<group>";
+		};
+		0A883BAE11ACD7F400520AF5 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				0ABFFA8C11F28EF900BBA65A /* BPC_view_levelup.png */,
+				0A4A5A6212E0EC2D00BECEC7 /* icon_off.png */,
+				0A4A5A6312E0EC2D00BECEC7 /* icon_on.png */,
+				0A4A58AC12DFFE3100BECEC7 /* BPC_icon_factor_tree.png */,
+				0A4A58AD12DFFE3100BECEC7 /* BPC_icon_multiples.png */,
+				0ABFFA4F11F2879C00BBA65A /* BPC_icon_addition.png */,
+				0ABFFA5011F2879C00BBA65A /* BPC_icon_multiply.png */,
+				0ABFFA5111F2879C00BBA65A /* BPC_icon_spectrum.png */,
+				0ABFFA5211F2879C00BBA65A /* BPC_icon_subtract.png */,
+				0ABFFA5911F287C400BBA65A /* BPC_icon_divide.png */,
+				0ABFFA5C11F28A4500BBA65A /* BPC_icon_oddandeven.png */,
+				0A9389F011BCA4C6007945B2 /* icon.png */,
+				0A91C26011DF208A004EE76D /* icon_72.png */,
+				0A883BB911ACD82C00520AF5 /* x.png */,
+				0A883BB111ACD81100520AF5 /* A.png */,
+				0A883BB211ACD81100520AF5 /* B.png */,
+				0A883BB311ACD81100520AF5 /* C.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		0A91C1F811DF0FA7004EE76D /* balloons */ = {
+			isa = PBXGroup;
+			children = (
+				0A8ED99011DC3E8E0037C971 /* balloon_blue.png */,
+				0A8ED9A411DC48560037C971 /* balloon_green.png */,
+				0A73D8C211DDBC4E00AE2C0B /* balloon_red_cross.png */,
+				0A8ED96E11DC2EF30037C971 /* balloon_yellow.png */,
+				0A8ED93E11DC25C20037C971 /* balloon_red.png */,
+			);
+			name = balloons;
+			sourceTree = "<group>";
+		};
+		0A93865C11B6A92B007945B2 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0A74E26511F986950096543A /* gemdroids.caf */,
+				0A7ECF6811C8AF24009C287B /* gardens.caf */,
+				0A7ECF6911C8AF24009C287B /* three-drops.caf */,
+				0A0BAE7211C68E5A00D53FCD /* balloon.caf */,
+				0A0BAE7311C68E5A00D53FCD /* balloon1.caf */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		0A9388CE11BB4C4A007945B2 /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A591C12E0229B00BECEC7 /* btn_letsgo.png */,
+				0A4A591D12E0229B00BECEC7 /* btn_letsgo_ROLL.png */,
+				0A74E1D111F962C40096543A /* btn_play.png */,
+				0ABFF9B811F16DFD00BBA65A /* btn_learn.png */,
+				0A938BD211BE1E53007945B2 /* btn_practice.png */,
+				0A938AC011BDF300007945B2 /* btn_grades.png */,
+				0A93882011B8BDBC007945B2 /* btn_help.png */,
+				0A93880611B8BA97007945B2 /* btn_play_old.png */,
+				0A93881A11B8BBC8007945B2 /* btn_options.png */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		0AF671A511CC787E00837872 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				0A27D82711CFC02B0055206A /* IpadHighScoreViewController.xib */,
+				0AF671A611CC787F00837872 /* MainWindow-iPad.xib */,
+				0AF671AA11CC797400837872 /* IpadBalloonChallengeViewController.xib */,
+				0AF671C411CC7DCB00837872 /* IpadOptionsViewController.xib */,
+				0AF671F411CC947E00837872 /* IpadHelpViewController.xib */,
+				0AF671F611CC94A800837872 /* IpadPracticeSelectViewController.xib */,
+				0AF671F811CC94CF00837872 /* IpadGameSelectViewController.xib */,
+				0AF671FA11CC951600837872 /* IpadGameViewController.xib */,
+				0A8ED89111DA93100037C971 /* IpadGameOverViewController.xib */,
+				0ABFFC3A11F4253500BBA65A /* IpadTimeChallengeViewController.xib */,
+				0ABFFC3C11F4255800BBA65A /* IpadTimeChallengeSelectViewController.xib */,
+			);
+			name = "Resources-iPad";
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -129,9 +558,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				26E2C1E41837544500B9CA78 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -150,14 +580,16 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A7E98DA113614DA00CD5453 /* balloonsBackground.png */,
-				0A7E98A3113612C800CD5453 /* OptionsViewController.xib */,
-				0A7E98A1113612C800CD5453 /* HighScoresViewController.xib */,
-				0A49A07111337C5200206894 /* blue_balloon.png */,
-				0A7E98CD113613DA00CD5453 /* BalloonChallengeViewController.xib */,
-				0A24546811214737009A536A /* game_bg.png */,
-				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				0ABCD216113228A200B62EB0 /* GameViewController.xib */,
+				0A91C1F811DF0FA7004EE76D /* balloons */,
+				0AF671A511CC787E00837872 /* Resources-iPad */,
+				0A1D8FBE1183956A00BE5EE1 /* nib */,
+				0A93865C11B6A92B007945B2 /* Sound */,
+				0A883BAE11ACD7F400520AF5 /* icons */,
+				0A1D8FBF1183959F00BE5EE1 /* background */,
+				0A9388CE11BB4C4A007945B2 /* buttons */,
+				0ABFFA3711F27D1F00BBA65A /* title_pop.png */,
+				0A12B8D311755ABB00C6318D /* title_balloon.png */,
+				0A12B8D411755ABB00C6318D /* title_challenge.png */,
 				8D1107310486CEB800E47090 /* BalloonChallenge-Info.plist */,
 			);
 			name = Resources;
@@ -166,9 +598,13 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				0AD91727134A32170010331A /* SystemConfiguration.framework */,
+				0A4A56ED12DF6B0500BECEC7 /* QuartzCore.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				0ACA852511A50F960080E85B /* AudioToolbox.framework */,
+				0ACA854611A512FB0080E85B /* AVFoundation.framework */,
+				0A27D95111CFC4E50055206A /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,9 +634,24 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = klivin.com;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = U726CZ2EVC;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BalloonChallenge" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -216,14 +667,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				0A24546911214737009A536A /* game_bg.png in Resources */,
-				0ABCD218113228A200B62EB0 /* GameViewController.xib in Resources */,
-				0A49A07211337C5200206894 /* blue_balloon.png in Resources */,
+				0A24546911214737009A536A /* bg_butterfly.png in Resources */,
 				0A7E98AA113612C800CD5453 /* HelpViewController.xib in Resources */,
 				0A7E98AD113612C800CD5453 /* HighScoresViewController.xib in Resources */,
 				0A7E98AE113612C800CD5453 /* OptionsViewController.xib in Resources */,
 				0A7E98CE113613DA00CD5453 /* BalloonChallengeViewController.xib in Resources */,
-				0A7E98DB113614DA00CD5453 /* balloonsBackground.png in Resources */,
+				1D04C4F9113E6351005AD12F /* PlayerViewController.xib in Resources */,
+				1D81D3991145DA7E002DF905 /* NewPlayerViewController.xib in Resources */,
+				0A1D9C4C114761B900955C93 /* GameViewController.xib in Resources */,
+				0A0EEFF2117106D80097B1A8 /* bg_space.png in Resources */,
+				0A12B8CE11755AA100C6318D /* bg_balloons.png in Resources */,
+				0A12B8DA11755ABB00C6318D /* title_balloon.png in Resources */,
+				0A12B8DB11755ABB00C6318D /* title_challenge.png in Resources */,
+				0A1D8F77118393D700BE5EE1 /* GameSelectViewController.xib in Resources */,
+				0A523D3A1183E3D000368A28 /* balloon_red_bg.png in Resources */,
+				0A523D6F1183EE3000368A28 /* balloon_blue_bg.png in Resources */,
+				0A523F01118562A800368A28 /* HelpView1.xib in Resources */,
+				0A523F061185651400368A28 /* HelpView2.xib in Resources */,
+				0A5122AE118E2E71008B514F /* GameOverViewController.xib in Resources */,
+				0A916C741193A69000CF9853 /* bg_clouds.png in Resources */,
+				0A883AF811AB9B4D00520AF5 /* PracticeSelectViewController.xib in Resources */,
+				0A883BB411ACD81100520AF5 /* A.png in Resources */,
+				0A883BB511ACD81100520AF5 /* B.png in Resources */,
+				0A883BB611ACD81100520AF5 /* C.png in Resources */,
+				0A883BBC11ACD82C00520AF5 /* x.png in Resources */,
+				0A93880711B8BA97007945B2 /* btn_play_old.png in Resources */,
+				0A93881D11B8BBC8007945B2 /* btn_options.png in Resources */,
+				0A93882111B8BDBC007945B2 /* btn_help.png in Resources */,
+				0A9389F111BCA4C6007945B2 /* icon.png in Resources */,
+				0A938AC111BDF300007945B2 /* btn_grades.png in Resources */,
+				0A938BD311BE1E53007945B2 /* btn_practice.png in Resources */,
+				0A0BAE7411C68E5A00D53FCD /* balloon.caf in Resources */,
+				0A0BAE7511C68E5A00D53FCD /* balloon1.caf in Resources */,
+				0A7ECF6A11C8AF24009C287B /* gardens.caf in Resources */,
+				0A7ECF6B11C8AF24009C287B /* three-drops.caf in Resources */,
+				0AF671A711CC787F00837872 /* MainWindow-iPad.xib in Resources */,
+				0AF671AC11CC797400837872 /* IpadBalloonChallengeViewController.xib in Resources */,
+				0AF671C511CC7DCB00837872 /* IpadOptionsViewController.xib in Resources */,
+				0AF671F511CC947E00837872 /* IpadHelpViewController.xib in Resources */,
+				0AF671F711CC94A800837872 /* IpadPracticeSelectViewController.xib in Resources */,
+				0AF671F911CC94CF00837872 /* IpadGameSelectViewController.xib in Resources */,
+				0AF671FB11CC951600837872 /* IpadGameViewController.xib in Resources */,
+				0AA2150111CD62F5004CF0F0 /* PlayerSelectViewController.xib in Resources */,
+				0A27D82911CFC02B0055206A /* IpadHighScoreViewController.xib in Resources */,
+				0A8ED89211DA93100037C971 /* IpadGameOverViewController.xib in Resources */,
+				0A8ED93F11DC25C20037C971 /* balloon_red.png in Resources */,
+				0A8ED96F11DC2EF30037C971 /* balloon_yellow.png in Resources */,
+				0A8ED99111DC3E8E0037C971 /* balloon_blue.png in Resources */,
+				0A8ED9A511DC48560037C971 /* balloon_green.png in Resources */,
+				0A73D8C311DDBC4E00AE2C0B /* balloon_red_cross.png in Resources */,
+				0A91C20C11DF0FCD004EE76D /* bg_dock_1024.png in Resources */,
+				0A91C26111DF208A004EE76D /* icon_72.png in Resources */,
+				0A91C5EA11EAD662004EE76D /* TimeChallengeViewController.xib in Resources */,
+				0A91C5F411EAEA8F004EE76D /* TimeChallengeSelectViewController.xib in Resources */,
+				0ABFF9B911F16DFD00BBA65A /* btn_learn.png in Resources */,
+				0ABFFA3811F27D1F00BBA65A /* title_pop.png in Resources */,
+				26E2C1E51837544500B9CA78 /* Default-568h@2x.png in Resources */,
+				0ABFFA5311F2879C00BBA65A /* BPC_icon_addition.png in Resources */,
+				0ABFFA5411F2879C00BBA65A /* BPC_icon_multiply.png in Resources */,
+				0ABFFA5511F2879C00BBA65A /* BPC_icon_spectrum.png in Resources */,
+				0ABFFA5611F2879C00BBA65A /* BPC_icon_subtract.png in Resources */,
+				0ABFFA5A11F287C400BBA65A /* BPC_icon_divide.png in Resources */,
+				0ABFFA5D11F28A4500BBA65A /* BPC_icon_oddandeven.png in Resources */,
+				0ABFFA8D11F28EF900BBA65A /* BPC_view_levelup.png in Resources */,
+				0ABFFC3B11F4253500BBA65A /* IpadTimeChallengeViewController.xib in Resources */,
+				0ABFFC3D11F4255800BBA65A /* IpadTimeChallengeSelectViewController.xib in Resources */,
+				0A74E1D211F962C40096543A /* btn_play.png in Resources */,
+				0A74E26611F986950096543A /* gemdroids.caf in Resources */,
+				0A4A58AE12DFFE3100BECEC7 /* BPC_icon_factor_tree.png in Resources */,
+				0A4A58AF12DFFE3100BECEC7 /* BPC_icon_multiples.png in Resources */,
+				0A4A590412E0172500BECEC7 /* Default-Landscape.png in Resources */,
+				0A4A590512E0172500BECEC7 /* Default-Portrait.png in Resources */,
+				0A4A590612E0172500BECEC7 /* Default.png in Resources */,
+				0A4A591E12E0229B00BECEC7 /* btn_letsgo.png in Resources */,
+				0A4A591F12E0229B00BECEC7 /* btn_letsgo_ROLL.png in Resources */,
+				0A4A592112E022BD00BECEC7 /* bg_welcome.png in Resources */,
+				0A4A599E12E0CEF100BECEC7 /* bg_welcomeframe.png in Resources */,
+				0A4A5A6412E0EC2D00BECEC7 /* icon_off.png in Resources */,
+				0A4A5A6512E0EC2D00BECEC7 /* icon_on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,35 +767,119 @@
 				0A7E98D21136146A00CD5453 /* BalloonChallengeViewController.m in Sources */,
 				0A7E98D7113614A100CD5453 /* BalloonChallengeAppDelegate.m in Sources */,
 				0A7DD92811365E3E00392A44 /* BalloonFactory.m in Sources */,
+				1D04C4F8113E6351005AD12F /* PlayerViewController.m in Sources */,
+				1D81D3981145DA7E002DF905 /* NewPlayerViewController.m in Sources */,
+				0A1D9C391147613A00955C93 /* MathChallenge.m in Sources */,
+				0AFBC5A4115706E900B99416 /* HighScoreArray.m in Sources */,
+				0AFBC5A5115706E900B99416 /* HighScore.m in Sources */,
+				0A8DD8F41161A7A500D7FCAA /* ChallengeFactory.m in Sources */,
+				0AD3B80B11651562001F1AF3 /* MyRange.m in Sources */,
+				0AE0C7C711680EBD00FAE72F /* PlayerStats.m in Sources */,
+				0A1D8B93117BD00A00BE5EE1 /* GameTextView.m in Sources */,
+				0A1D8F76118393D700BE5EE1 /* GameSelectViewController.m in Sources */,
+				0A523EBF1185322F00368A28 /* PageViewController.m in Sources */,
+				0A523EC21185323A00368A28 /* DataSource.m in Sources */,
+				0A5122AD118E2E71008B514F /* GameOverViewController.m in Sources */,
+				0A7D1CC51199A1CA00F0CE75 /* ChallengeGroup.m in Sources */,
+				0A7D1D5F119F344A00F0CE75 /* GroupFactory.m in Sources */,
+				0A7D1E5511A23A5F00F0CE75 /* Level.m in Sources */,
+				0A883A7F11AB63E600520AF5 /* PracticeSelectViewController.m in Sources */,
+				0ACA094B11B014B9004AEA0F /* GameState.m in Sources */,
+				0AA214B011CD4926004CF0F0 /* PlayerSelectViewController.m in Sources */,
+				0A27D74F11CF44C50055206A /* IpadHelpViewController.m in Sources */,
+				0A27D82811CFC02B0055206A /* IpadHighScoreViewController.m in Sources */,
+				0A91C5E911EAD662004EE76D /* TimeChallengeViewController.m in Sources */,
+				0A91C5F311EAEA8F004EE76D /* TimeChallengeSelectViewController.m in Sources */,
+				0ABFF87611F105D900BBA65A /* TimeChallengeStats.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0A938C8E11BF2282007945B2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Weiler";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "38020751-5208-4199-B68A-4C8600980DB9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Distribution;
+		};
+		0A938C8F11BF2282007945B2 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kevin Weiler";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BalloonChallenge_Prefix.pch;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "BalloonChallenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BalloonChallenge;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "38020751-5208-4199-B68A-4C8600980DB9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
+			};
+			name = Distribution;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BalloonChallenge_Prefix.pch;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BalloonChallenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = BalloonChallenge;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ADDITIONAL_SDKS = "";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = BalloonChallenge_Prefix.pch;
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "BalloonChallenge-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = BalloonChallenge;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Release;
 		};
@@ -282,12 +887,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kevin Weiler (4CJ4VFWZ8E)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF3372B4-54A5-4E12-BDB7-C7E4932FC252";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Debug;
 		};
@@ -295,12 +906,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kevin Weiler (4CJ4VFWZ8E)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF3372B4-54A5-4E12-BDB7-C7E4932FC252";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 i386";
 			};
 			name = Release;
 		};
@@ -312,18 +929,20 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				0A938C8F11BF2282007945B2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "BalloonChallenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				0A938C8E11BF2282007945B2 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

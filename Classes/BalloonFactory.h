@@ -10,10 +10,19 @@
 #import "Balloon.h"
 
 
+
 @interface BalloonFactory : NSObject {
-	
+//	int level;
 }
+//@property int level;
++ (id) createBalloonWithText: (NSString *) newText
+					 inFrame: (CGRect) parentFrame
+				   withScore: (int) score;
++ (id) createBalloonWithColor: (BalloonColor) color
+					 andText: (NSString*) newText
+					 inFrame: (CGRect) parentFrame
+				   withScore: (int) score;
 
-+ (Balloon *) createRandomBalloon;
-
++ (int) balloonHeight;
++ (int) balloonWidth;
 @end

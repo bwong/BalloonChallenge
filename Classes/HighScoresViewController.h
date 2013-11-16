@@ -6,19 +6,16 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BalloonChallengeAppDelegate.h"
+#import "PlayerViewController.h"
 
-@interface HighScoresViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
-    NSMutableArray *playerNameList;
-    UITableView *playerTableView;
-    UIButton *mainMenuButton;
+@interface HighScoresViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+
+	UITableView *playerTableView;
+	PlayerViewController *playerViewController;
 }
 
-@property (nonatomic, retain) NSMutableArray *playerNameList;
 @property (nonatomic, retain) IBOutlet UITableView *playerTableView;
-@property (nonatomic, retain) IBOutlet UIButton *mainMenuButton;
-
-- (IBAction) mainMenuButtonPressed: (id) sender;
+@property (nonatomic, retain) IBOutlet PlayerViewController *playerViewController;
 
 @end

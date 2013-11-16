@@ -10,10 +10,12 @@
 
 
 @implementation GameView
-@synthesize backgroundImg,drawImage;
+@synthesize backgroundImg;
+@synthesize gameDelegate;
+@synthesize textView, textBackground;
+
 - (id) initWithCoder:(NSCoder *)aDecoder{
 	if (self = [super initWithCoder:aDecoder]) {
-		self.drawImage = [UIImage imageNamed:@"game_bg.png"];
 	}
 	return self;
 }
@@ -25,24 +27,13 @@
     return self;
 }
 
-
-- (void)drawRect:(CGRect)rect {
-	//gets the current context you are drawing into
-//	CGContextRef context = UIGraphicsGetCurrentContext();
-	//[self.drawImage drawAtPoint:CGPointMake(0, 0)];
-	//[self.b.x =  drawAtPoint:self.b.currentPoint];
-
-//	//drawing rectangle
-//	CGContextAddRect(context,CGRectMake(0, 0, 50, 50));
-//	CGContextAddEllipseInRect(context, CGRectMake(50, 50, 100, 120));
-//	CGContextSetRGBStrokeColor(context, .5, 0, 0, 1);
-//	// this line actually draws the path
-//	CGContextDrawPath(context, kCGPathStroke);
+- (void) touchesBegan: (NSSet *) touches 
+			withEvent: (UIEvent *) event {
+	[self.nextResponder touchesBegan: touches withEvent:event]; 
 }
 
 
-- (void)dealloc {
-	[backgroundImg release];
+- (void)dealloc {	
     [super dealloc];
 }
 

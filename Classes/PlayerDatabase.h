@@ -2,11 +2,19 @@
 //  PlayerDatabase.h
 //  BalloonChallenge
 //
-//  Created by Brian Wong on 2/23/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Kevin Weiler on 2/23/10.
+//  Copyright 2010 klivin.com. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Player.h"
+#import "MathChallenge.h"
+#import "HighScore.h"
+
+enum PlayerOrdering {
+	PlayerDBSortByName,
+	PlayerDBSortByHighScore,
+	PlayerDBSortByLevel
+};
 
 /* A Player Database represents a collection of players. */
 @interface PlayerDatabase : NSObject <NSCoding>{
@@ -14,18 +22,25 @@
 }
 @property (nonatomic, retain) NSMutableArray *playerArray;
 
-- (id) init;
+// Add a player object to the database
+- (void) addPlayerObj:(Player *) newPlayer;
 
-/* Add a quote to the database.  */
-- (void) addPlayer:(NSString *) newName
-		 withDifficultySettingAt:(int) newDifficulty
-		 andLevelSettingAt:(int) newLevel
-         andHighscoreOf: (int) newHighscore;
-
-/* Returns number of players in the database.  */
+// Returns number of players in the database
 - (int) numPlayers;
 
-/* Returns an array of players.  */
-- (NSMutableArray *) findAllPlayers;
+// Check if a Player with the same name exists already
+- (BOOL) isPlayerNameDuplicate: (NSString *) playerName;
+- (BOOL) isExistingName: (NSString *) playerName;
+
+// Remove a player the given name
+- (void) removePlayerWithName: (NSString *) name;
+
+// Find a player by the given name and return the player object
+- (Player *) findPlayerWithName: (NSString *) name;
+
+- (HighScore*) highScoreForTimeChallenge: (ChallengeGroupType) challengeType;
+
+/* Returns an array of names of players.  */
+- (NSMutableArray *) playerNames;
 
 @end 

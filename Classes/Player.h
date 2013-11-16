@@ -2,38 +2,45 @@
 //  Player.h
 //  BalloonChallenge
 //
-//  Created by Brian Wong on 2/23/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Kevin Weiler on 3/23/10.
+//  Copyright 2010 klivin.com. All rights reserved.
 //
 
+#import "PlayerStats.h"
+#import "MathChallenge.h"
 #import <Foundation/Foundation.h>
 
 
-@interface Player : NSObject <NSCoding>{
+@interface Player : NSObject <NSCoding, NSCopying> {
     NSString *name;
-    int difficulty;
-    int level;
-    int highscore;
+	PlayerStats *currentStats;
+    Level *level;
 }
 
+@property (retain) PlayerStats *currentStats;
 @property (retain) NSString *name;
-@property int difficulty;
-@property int level;
-@property int highscore;
+@property (nonatomic,retain) Level *level;
 
-/* Create a new player with the specified information.  */
 - (id) initWithName: (NSString *) newName 
-        andDifficulty: (int) newDifficulty
-        andLevel: (int) newLevel
-        andHighscore: (int) newHighscore;
+      andTimePlayed: (int) newTimedPlayed;
 
-/* Compare against another player alphabetically based on the player's
- name.  Performs a case-sensitive comparison.  */
-- (NSComparisonResult) compareByName: (Player *) otherPlayer;
+- (void) setPlayerName: (NSString*) myName
+				 Level: (Level *) mylevel;
 
-/* Compare against another player based on the highscore.  */
-- (NSComparisonResult) compareByHighScore: (Player *) otherPlayer;
+- (void) addPlayerStatsForTimeChallenge: (ChallengeGroupType) cType
+							   andLevel:(unsigned int) lev
+							andBalloons:(unsigned int) hits
+								andTime:(unsigned int) timeElapsed
+							   andCombo:(unsigned int) combo 
+							   andScore:(unsigned int) score;
+- (void) addPlayerStatsForLevel: (Level *) level
+				  andDifficulty: (ChallengeDifficulty) difficulty
+					 andCorrect: (unsigned int) correct
+				   andIncorrect: (unsigned int) incorrect
+						andTime: (unsigned int) seconds;
 
+- (void) setPlayerLevel:(Level *)myLevel;
+- (void) clearStats;
 - (void) dealloc;
 
 @end

@@ -6,3 +6,16 @@
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
 #endif
+
+
+
+#ifndef __IPHONE_3_2
+
+typedef enum {
+	UIUserInterfaceIdiomPhone,
+	UIUserInterfaceIdiomPad,
+} UIUserInterfaceIdiom;
+
+#define UI_USER_INTERFACE_IDIOM() UIUserInterfaceIdiomPhone
+
+#endif

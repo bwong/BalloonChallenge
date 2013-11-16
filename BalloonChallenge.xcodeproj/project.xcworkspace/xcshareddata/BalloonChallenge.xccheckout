@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6F80F5DC-2A11-4F3B-81AC-E509EE4C72D7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BalloonChallenge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>22796758-9969-442C-96FF-BC4DA72B0418</key>
+		<string>ssh://github.com/bwong/BalloonChallenge.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BalloonChallenge.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>22796758-9969-442C-96FF-BC4DA72B0418</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/bwong/BalloonChallenge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>22796758-9969-442C-96FF-BC4DA72B0418</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>22796758-9969-442C-96FF-BC4DA72B0418</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BalloonChallenge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

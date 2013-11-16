@@ -2,106 +2,137 @@
 //  OptionsViewController.m
 //  BalloonChallenge
 //
-//  Created by Brian Wong on 2/9/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Kevin Weiler on 4/6/10.
+//  Copyright 2010 klivin.com. All rights reserved.
 //
 
 #import "OptionsViewController.h"
+#import "ChallengeFactory.h"
 
 
 @implementation OptionsViewController
 
 @synthesize playerName;
-@synthesize levelLabel;
-@synthesize backButton;
-@synthesize saveButton;
-@synthesize gameDifficulty;
+@synthesize selectDiffPlayerButton;
+@synthesize category;
+@synthesize optionsToolbar;
+@synthesize selectViewController;
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	selectViewController.playerSelectDelegate = self;
+	// Flexible Spacing
+    // makes it so we can push the save button to the right
+    // and the cancel button to the left
+    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] 
+                                      initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
+                                      target:nil 
+                                      action:nil];
+    
+    // Back Button
+	UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Back" 
+								   style:UIBarButtonItemStyleDone
+								   target:self
+								   action:@selector(backButtonItemPressed)];
+    
+    // Save Button
+	UIBarButtonItem *saveButton = [[UIBarButtonItem alloc]
+								   initWithTitle:@"Save" 
+                                   style:UIBarButtonItemStyleBordered
+								   target:self
+								   action:@selector(saveButtonItemPressed)];
+    
+    // Set up our tool bar
+    NSArray *toolbarItems = [NSArray arrayWithObjects:backButton, flexibleSpace, saveButton, nil];
+    [optionsToolbar setItems:toolbarItems animated:NO]; 
+	[flexibleSpace release];
+	[backButton release];
+	[saveButton release];
+	[super viewDidLoad];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Overriden to allow any orientation.
+	return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad);
+}
 
 // Go Back to Main Window
-- (IBAction) backButtonPressed: (id) sender {
+- (void) backButtonItemPressed{
     [self dismissModalViewControllerAnimated:YES];
 }
 
+-(void) playerSelected: (NSString*) name {
+	self.playerName.text = name;
+}
+
+// Select Different Player
+// Go Back to Main Window
+- (IBAction) selectDifferentPlayerButtonPressed: (id) sender {
+	[self resignFirstResponder];
+	if (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPad) {
+		[self presentModalViewController:selectViewController animated:YES]; 
+	}
+}
+
 // Save Information for Default Player for the Session
-- (IBAction) saveButtonPressed: (id) sender {
-    // Save Player Info
+- (void) saveButtonItemPressed {
     // Our AppDelegate has the master player database object
     // so to access it, we need to get the delegate.
     BalloonChallengeAppDelegate *appDelegate = 
         (BalloonChallengeAppDelegate*)[[UIApplication sharedApplication] delegate];
-    int level = [levelLabel.text intValue];
-    Player *newPlayer = [[Player alloc] initWithName:playerName.text 
-                                      andDifficulty:gameDifficulty 
-                                           andLevel:level 
-                                       andHighscore:0];
-    appDelegate.defaultPlayer = newPlayer;
-    [appDelegate.playerDatabaseObj addPlayer:playerName.text 
-                     withDifficultySettingAt:gameDifficulty 
-                           andLevelSettingAt:level 
-                              andHighscoreOf:0];
-    
+	Player* p = appDelegate.defaultPlayer;
+    // Save Player Info
+	NSString *tempName = [NSString stringWithString:p.name];
+	Level *tempLevel = p.level;
+	
+    // get current selected player and update default player info
+	[p setPlayerName:playerName.text
+			   Level:tempLevel];
+	
+	if ( [appDelegate.playerDatabaseObj isPlayerNameDuplicate: playerName.text] ) 
+	{
+		//revert to saved
+		[p setPlayerName:tempName
+				   Level:tempLevel];
+		// Don't Allow a user to add duplicate player names
+        UIAlertView *alert = [[UIAlertView alloc] 
+                              initWithTitle:@"Choose a different name" 
+                              message:@"This player already exists, please change the name before saving." 
+                              delegate:nil 
+                              cancelButtonTitle:@"Okay." 
+                              otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+		return;
+	}
+	
+
+	
     [self dismissModalViewControllerAnimated:YES];
 }
 
-// Switching Levels
-- (IBAction) sliderChanged: (id) sender {
-    UISlider *slider = (UISlider *) sender;
-    int levelInt = (int) (slider.value);
-    NSString *newText = [[NSString alloc] initWithFormat:@"%d",levelInt];
-    levelLabel.text = newText;
-    [newText release];
-}
 
-// Selecting Difficulty
-- (IBAction) segmentSelected: (id) sender {
-    if ([sender selectedSegmentIndex] == kDifficultyEasy)
-    {
-        gameDifficulty = kDifficultyEasy;
-    }
-    if ([sender selectedSegmentIndex] == kDifficultyNormal)
-    {
-        gameDifficulty = kDifficultyNormal;
-    }
-    if ([sender selectedSegmentIndex] == kDifficultyHard)
-    {
-        gameDifficulty = kDifficultyHard;
-    }
-}
 
-// Helper function for removing Keyboard from screen
-- (IBAction)textFieldDoneEditing:(id)sender {
-	[sender resignFirstResponder];
-}
 
 // Helper function for removing Keyboard from screen
 - (IBAction)backgroundTap:(id)sender {
-    [playerName resignFirstResponder];	
+    [sender resignFirstResponder];	
 }
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
+// Setup up view
+- (void)viewWillAppear:(BOOL)animated {
+    self.title = @"Options";	
+    BalloonChallengeAppDelegate *appDelegate = 
+        (BalloonChallengeAppDelegate*)[[UIApplication sharedApplication] delegate];
+	
+	Player *p = appDelegate.defaultPlayer;
+    
+    // Get player name and display in text field
+	[self playerSelected:p.name];
+	
+    [super viewWillAppear:animated];
 }
-*/
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -118,9 +149,9 @@
 
 - (void)dealloc {
     [playerName release];
-    [levelLabel release];
-    [backButton release];
-    [saveButton release];
+    [selectDiffPlayerButton release];
+    [category release];
+    [optionsToolbar release];
     [super dealloc];
 }
 
